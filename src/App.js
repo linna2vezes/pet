@@ -6,8 +6,11 @@ import Login from "./routes/Login";
 import ProtectedPage from "./routes/ProtectedPage";
 import { AuthProvider, RequireAuth } from "./context/auth-context";
 
+
 function App() {
   return (
+    <div className="bg">
+    
     <AuthProvider>
       <Routes>
         <Route element={<Layout />}>
@@ -24,6 +27,7 @@ function App() {
         </Route>
       </Routes>
     </AuthProvider>
+  </div>
   );
 }
 

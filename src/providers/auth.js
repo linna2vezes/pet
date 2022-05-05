@@ -12,7 +12,7 @@ export const authProvider = {
       localStorage.setItem("user", JSON.stringify(user));
       callback(user);
 
-      console.log(response);
+      // console.log(response);
     } catch (error) {}
   },
   signout: (callback) => {

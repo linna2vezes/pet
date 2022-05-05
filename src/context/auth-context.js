@@ -5,7 +5,8 @@ import { useLocation, Navigate } from "react-router-dom";
 const AuthContext = createContext(null);
 
 export const AuthProvider = (props) => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")) || null);
+  // o parse faz o inverso do stringfy transforma uma string em Json
 
   const login = (data, callback) => {
     authProvider.signin(data, (user) => {

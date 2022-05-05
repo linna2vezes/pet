@@ -1,21 +1,41 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link, Outlet } from "react-router-dom";
 import AuthStatus from "../AuthStatus/AuthStatus";
+import Contact from "../Contact/Contact";
+import Footer from "../Footer/Footer";
+import "./Layout.css";
 
 function Layout() {
   return (
-    <div>
-      <AuthStatus />
-      <ul>
+    <Fragment>
+      <div className="out_container ">
+      
+        <nav className="navbar">
+      <img className = " img" alt="logomarca" src={require("../../images/logo.png")}/>
+
+      <AuthStatus  />
+      
+      <ul id="menu">
         <li>
-          <Link to="/">Public Page</Link>
+          <Link to="/">Home</Link>
         </li>
+        
         <li>
-          <Link to="/protected">Protected Page</Link>
+          <Link to="/protected">Faça Login</Link>
         </li>
       </ul>
+      </nav>
+      </div>
+      <div className="container">
       <Outlet />
-    </div>
+      </div>
+      <Contact />
+      <Footer />
+      
+      </Fragment>
+      
+     
+   
   );
 }
 

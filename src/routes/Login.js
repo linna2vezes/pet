@@ -1,12 +1,14 @@
 import React from "react";
 import { useAuth } from "../context/auth-context";
 import { useLocation, useNavigate } from "react-router-dom";
+import "./Login.css";
+import { Button } from "./styled";
 
 function Login() {
   const auth = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
-  console.log(location);
+  // console.log(location);
   const from = location.state?.from?.pathname || "/";
 
   const handleSubmit = (event) => {
@@ -21,11 +23,11 @@ function Login() {
     auth.login(data, () => {
       navigate(from);
     });
-    console.log(data);
+    // console.log(data);
   };
 
   return (
-    <div>
+    <div className="login">
       <form onSubmit={handleSubmit}>
         <label>
           email: <input type="email" name="email" />
@@ -33,7 +35,7 @@ function Login() {
         <label>
           senha: <input type="password" name="password" />
         </label>
-        <button type="submit">Enviar</button>
+        <Button type="submit">Enviar</Button>
       </form>
     </div>
   );

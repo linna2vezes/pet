@@ -1,4 +1,8 @@
 import client from "../providers/client";
 
-export const listPets = () =>
-  client.get("pets/0rp4knn/a398510e-0800-47c2-94c1-29c990ac2bb");
+export const listPets = () =>  client.get("pets/0b24lpf");
+
+export const postPets = (data) => client.post("pets/0b24lpf", data);
+
+export const deletePets = (id) => client.delete("pets/0b24lpf", id);
+
