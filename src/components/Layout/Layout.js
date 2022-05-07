@@ -21,7 +21,7 @@ function Layout() {
         </li>
         
         <li>
-          <Link to="/protected">Faça Login</Link>
+          <Link to="/protected">Acesso Restrito</Link>
         </li>
       </ul>
       </nav>
