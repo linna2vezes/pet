@@ -1,0 +1,77 @@
+.container_page_protected {
+
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  color: gainsboro;
+   font-family:"Roboto";
+   margin: 30px;
+    
+   
+        
+
+}
+
+
+.form_pets {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content:space-between;
+    
+    
+ } 
+
+
+ #form_pets input {
+  justify-content: center;
+  justify-items: center;
+  border-radius: 8px;
+  height: 30px;
+  width: 300px;
+  margin: auto;
+  padding-left: 15px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+
+
+ }
+
+ 
+ #form_pets select {
+  border-radius: 8px;
+  height: 30px;
+  width: 150px;
+  padding-left: 15px;
+  margin:7px 0px 7px 0px;
+  gap:10px;
+  
+  
+
+
+ }
+
+
+
+
+
+/* .form_pets button {
+    
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    background-color: #222931;
+    border-color: #ffc903;
+    border-width: 0.1px;
+    color: white;
+          
+  }
+
+  .form_pets button:hover {
+    border: none;
+    color:  #ffc903;
+    font-size: medium;
+       
+          
+  } */
