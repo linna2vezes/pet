@@ -22,7 +22,7 @@ function PublicPage() {
       request();
     }, []);
     
-  return <Div> {pets.map (el => <Card  name={el.name} breed={el.breed} age={el.age} species={el.species} url={el.url} />)} </Div>;
+  return <Div> {pets.map (el => <Card  name={el.name} breed={el.breed} age={el.age} species={el.species} gender={el.gender} url={el.url} />)} </Div>;
 
 
 
