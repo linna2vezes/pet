@@ -25,6 +25,8 @@ const post = async (submitData) => {
   const cadastrePet = { name , breed , age , species, gender, url }
   console.log(cadastrePet)
   await postPets (cadastrePet)  
+  alert ("pet cadastrado") 
+  
   // const cadastrePet = { name , breed , age , species, gender, url}
    
  } catch (error) { console.log("deu ruim")
@@ -45,6 +47,7 @@ const post = async (submitData) => {
 //   //  const url = data.get("url")
   
  await deletePets (id)  
+ alert ("pet deletado") 
 //    // const cadastrePet = { name , breed , age , species, gender, url}
     
  } catch (error) {

@@ -34,6 +34,7 @@ export const A = styled.a `
    text-decoration: none;
    font-size:smaller;
    color: white;
+   margin-left:15px;
 
    &:hover {
     color: #ffc903;
